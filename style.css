@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  line-height: 1.6;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #1f1f1f;
+  padding: 0.7rem 1rem;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #f4c430;
+  color: #000;
+}
+
+nav a.active {
+  background: #f4c430;
+  color: #000;
+}
+
+
+section {
+  background: #fff;
+  max-width: 900px;
+  margin: 2.5rem auto;          
+  padding: 2rem;              
+  border-left: 6px solid #f4c430;
+  scroll-margin-top: 120px;     
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin-bottom: 1.2rem;
+}
+
+
+.module-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  margin: 1.5rem 0;             
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  background: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #f4c430;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #f4c430;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #ffda55;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .module-image {
+    height: 200px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+}
